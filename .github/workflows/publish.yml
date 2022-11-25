@@ -13,8 +13,8 @@ jobs:
         registry: ghcr.io
         username: ${{ github.actor }}
         password: ${{ secrets.GITHUB_TOKEN }}
-        
+
     - name: Build the hello-docker Docker image
       run: |
-        docker build . --tag ghcr.io/OwenVanRijn/test-repo-idk:latest
-        docker push ghcr.io/OwenVanRijn/test-repo-idk:latest
+        docker build . --tag ghcr.io/owenvanrijn/test-repo-idk:latest
+        docker push ghcr.io/owenvanrijn/test-repo-idk:latest
